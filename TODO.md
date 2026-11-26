@@ -21,9 +21,9 @@ Start 2026-11-26. Status: READY / DOING / BLOCKED / DONE / BACKLOG. Canonical gl
 S4 gate: before DEV-003 physical design, DB data/constraints/query/transactions, test environment and rollback review. No implementation of unapproved auth policy. DEV-002 optional if not needed, record defer instead of inventing commit. Prioritize a coherent vertical slice; tests belong with behavior. No arbitrary dates or mandatory framework before useful code.
 
 ## Active checkpoint — 2026-11-26
-- Requirement: ENG-01 (HTTP foundation); work branch: `feat/eng-01-http-foundation` (planned at setup, verify branch existence/HEAD before work).
+- Requirement: ENG-01 (HTTP foundation); work branch: `feat/eng-01-http-foundation` (created and verified at setup; refresh HEAD before work).
 - Integration: `dev`; control: `main`. Session: `ENG-01-S001`; note: `docs/work/ENG-01/SESSION-001.md` on topic.
-- State: READY, local code NOT STARTED / NOT REPORTED; last evidence: documentation setup only. No approved HTTP implementation yet; review DEC-HTTP-01 first.
+- State: READY, local code NOT STARTED / NOT REPORTED; last evidence: documentation setup only. Topic session note commit f6e91146d87f8887c7b468426a7b191bdfd1cce0; dev base d1101cfe4c0bc15a40b5713ff6afef2c606a59aa. No implementation commit. No approved HTTP implementation yet; review DEC-HTTP-01 first.
 - Next: developer clones/checks out topic, reads task and library docs, writes first core in main.go. Session close updates topic note then main pointer; no automatic DONE. Requirement PR to dev only when DEV-001 plus DEV-002 (if needed or explicitly deferred) accepted; milestone promotion dev -> main separate approval.
 
 ## Today — DEV-001
