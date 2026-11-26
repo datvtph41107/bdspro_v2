@@ -21,3 +21,6 @@ An individual can establish an account, authenticate, obtain permitted self info
 IND-R03–05 policy specifics remain PROPOSED/OPEN in [S3](docs/requirements/RQ-02-S3.md). Accepted facts: Account-centric, required display_name stored with Account, no separate Profile/Settings initially, email/password initial research, /me four fields. Name not unique, not legal identity; trim/length/encoding and error policy to review. No required org/person/party, phone, Google, invitations, CRM, public profile, payment or background worker in initial implementation. Future capabilities may justify revisiting. Registration and login API names are proposals, not finalized frontend contract.
 
 Security and operational gates apply before real exposure; local HTTP health task can proceed independently of S3 because it has no account data or authentication. Do not implement auth until relevant S3/S4 decisions approved.
+
+## Engineering workflow constraint
+ENG-02 includes reproducible session handoff: main canonical policy/queue, dev integration, topic branch local implementation and session evidence. Initially core Go code lives in root main.go; tests/tool-specific files separate; justified extraction only. No runtime code authored by AI.

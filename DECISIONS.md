@@ -13,6 +13,8 @@
 | DEV-START-01 | HTTP-first ACCEPTED | user wants understand Go HTTP request/runtime before DB. Supersedes prior database-first proposal. Integrate DB soon, no generic framework campaign |
 | DEC-DEV-01 | Developer writes runtime locally ACCEPTED | mentor/review; generated code permitted; no AI runtime push |
 | DEC-REPO-01 | bdspro_v2 fresh source + selected docs ACCEPTED | existing root README history preserved; no v1 runtime/data migration; old repo untouched |
+| DEC-GIT-01 | main canonical docs, dev integration, requirement topic branches ACCEPTED | developer request; preserve real history and separate shared direction from daily changes; detailed workflow convention reviewable |
+| DEC-CODE-01 | main.go-first core ACCEPTED | developer request to understand actual mechanisms before extracting packages; tests/SQL/tool-generated files separate; revisit when responsibility/change/test evidence warrants |
 | DEC-HTTP-01 | net/http + explicit ServeMux, loopback health first PROPOSED | standard library, method routes Go 1.22+; compare Chi when missing capability/maintenance need; user may challenge before coding |
 | DEC-STACK-04 | pgx/v5 + pgxpool PROPOSED | matches sqlc generation; review pool/connection behavior at DB task |
 | DEC-SEC-01..05 | Verification, credential, session, abuse/recovery, contract OPEN | see S3; compare alternatives and failure before implementation |

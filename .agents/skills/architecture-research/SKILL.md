@@ -3,7 +3,7 @@ name: bdspro-architecture-research
 description: Requirement-led Go engineering and source archaeology for BDSPro V2; use for material design decisions, not as an architecture target.
 ---
 # Requirement and architecture research
-Adapted from BDSPro dev and PR #246; see docs/research/README.md. Load AGENTS.md and current TODO first. Repository-local guidance, not an installed plugin.
+Adapted from BDSPro dev and PR #246; see docs/research/README.md. Load latest main AGENTS.md, TODO.md, HANDOFF.md, docs/engineering/WORKFLOW.md; inspect active topic HEAD/session note. No premature extraction from main.go. Repository-local guidance, not an installed plugin.
 
 1. State actor, purpose, invariant, scope, success/deny/failure examples and unknowns.
 2. Inspect actual source at pinned SHA and relevant callers. For historical changes inspect issue/PR, before/after diff and tests; distinguish evidence from intent. No mandatory reference project.

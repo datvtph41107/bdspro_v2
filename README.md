@@ -2,7 +2,11 @@
 
 Backend Go được xây dựng từng bước bởi developer. Repo này bắt đầu mới, chỉ kế thừa tài liệu nghiên cứu có chọn lọc từ BDSPro cũ, không kế thừa implementation.
 
-## Bắt đầu
+## Bắt đầu — luôn đọc từ nhánh main
+- [Quy trình nhánh và phiên làm việc](docs/engineering/WORKFLOW.md): main điều phối tài liệu; dev tích hợp; nhánh requirement để code local.
+- [HANDOFF.md](HANDOFF.md) và [TODO.md](TODO.md) xác định phiên/nhánh đang làm. Không lấy trạng thái từ chat cũ.
+- Code Go ban đầu tập trung trong root `main.go`; test ở `main_test.go`. Chỉ tách khi có căn cứ.
+
 - [REQUIREMENTS.md](REQUIREMENTS.md): mục đích, phạm vi và yêu cầu.
 - [DECISIONS.md](DECISIONS.md): quyết định, căn cứ và điều kiện xem xét lại.
 - [TODO.md](TODO.md): hàng đợi công việc duy nhất, mỗi task gắn với commit dự kiến.

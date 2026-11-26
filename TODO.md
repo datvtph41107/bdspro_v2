@@ -1,5 +1,5 @@
 # TODO — one working queue
-Start 2026-11-26. Status: READY / DOING / BLOCKED / DONE / BACKLOG. One task at a time, dates are suggested work sessions, not deadlines. All implementation is local developer-authored. Every task includes review and evidence; sample commit messages are plans, NOT existing commits. Before push inspect diff and test; no unnecessary empty commits, combine when coherent. Record actual SHA and output at completion. No runtime yet.
+Start 2026-11-26. Status: READY / DOING / BLOCKED / DONE / BACKLOG. Canonical global queue on main. One active requirement/topic at a time, dates are suggested sessions, not deadlines. All implementation is local developer-authored. Every task includes review and evidence; sample commit messages are plans, NOT existing commits. Before push inspect diff and test; no unnecessary empty commits, combine when coherent. Record actual SHA and output at completion. No runtime yet.
 
 | Task | Suggested workday | Requirement / decision | Output / acceptance | Planned commit | State |
 |---|---|---|---|---|---|
@@ -19,6 +19,12 @@ Start 2026-11-26. Status: READY / DOING / BLOCKED / DONE / BACKLOG. One task at 
 | DEV-011 | next | IND-R07/ENG-02 | integrated local review, tests, operations, migration/backup recovery rehearsal, deployment plan; no public release without approval | docs(ops): record identity verification and release gate | BACKLOG |
 
 S4 gate: before DEV-003 physical design, DB data/constraints/query/transactions, test environment and rollback review. No implementation of unapproved auth policy. DEV-002 optional if not needed, record defer instead of inventing commit. Prioritize a coherent vertical slice; tests belong with behavior. No arbitrary dates or mandatory framework before useful code.
+
+## Active checkpoint — 2026-11-26
+- Requirement: ENG-01 (HTTP foundation); work branch: `feat/eng-01-http-foundation` (planned at setup, verify branch existence/HEAD before work).
+- Integration: `dev`; control: `main`. Session: `ENG-01-S001`; note: `docs/work/ENG-01/SESSION-001.md` on topic.
+- State: READY, local code NOT STARTED / NOT REPORTED; last evidence: documentation setup only. No approved HTTP implementation yet; review DEC-HTTP-01 first.
+- Next: developer clones/checks out topic, reads task and library docs, writes first core in main.go. Session close updates topic note then main pointer; no automatic DONE. Requirement PR to dev only when DEV-001 plus DEV-002 (if needed or explicitly deferred) accepted; milestone promotion dev -> main separate approval.
 
 ## Today — DEV-001
 Read [task](docs/tasks/DEV-001.md). Review DEC-HTTP-01; user writes in local repo. No database, credentials, fake registration or production endpoint. Send actual source/diff + commands/output for review. At end record state/actual SHA and next action; do not mark done from this plan.
